@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZYNOVA</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#030914;
+  color:#fff;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+body:before,body:after{
+  content:"";position:fixed;z-index:-1;border-radius:50%;
+  filter:blur(90px);opacity:.22;
+}
+body:before{width:420px;height:420px;background:#006eff;left:-180px;top:180px}
+body:after{width:500px;height:500px;background:#123cff;right:-220px;bottom:50px}
+header{
+  height:86px;border-bottom:1px solid rgba(0,153,255,.25);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 6%;background:rgba(3,9,20,.8);backdrop-filter:blur(12px);
+  position:sticky;top:0;z-index:5;
+}
+.logo{font-size:30px;font-weight:900;letter-spacing:3px}
+.logo span{color:#169cff}
+nav{display:flex;gap:38px}
+nav a{color:#dcecff;text-decoration:none;font-weight:700}
+nav a:hover{color:#18a8ff}
+.badge{border:1px solid #168fff;border-radius:30px;padding:11px 20px;color:#a9dcff}
+.hero{text-align:center;padding:90px 20px 65px}
+.z{font-size:105px;font-weight:900;font-style:italic;line-height:.9;color:#169cff;text-shadow:0 0 35px #006cff}
+h1{font-size:72px;letter-spacing:7px;margin:12px 0}
+.tag{font-size:28px;color:#a8d9ff;font-weight:700}
+.desc{max-width:680px;margin:20px auto;color:#b8c8da;font-size:18px;line-height:1.7}
+.download{
+  display:inline-block;margin-top:22px;padding:18px 42px;border-radius:16px;
+  background:linear-gradient(135deg,#11b6ff,#1555ff);
+  color:#fff;text-decoration:none;font-size:22px;font-weight:900;
+  box-shadow:0 0 35px rgba(0,125,255,.45);
+  transition:.2s;
+}
+.download:hover{transform:translateY(-3px);box-shadow:0 0 50px rgba(0,150,255,.65)}
+.note{margin-top:18px;color:#4fc1ff}
+.features{
+  max-width:1100px;margin:20px auto 80px;padding:0 20px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:20px
+}
+.card{
+  text-align:center;padding:30px 18px;border:1px solid rgba(0,143,255,.25);
+  background:rgba(9,22,42,.55);border-radius:18px
+}
+.icon{font-size:38px;color:#169cff;margin-bottom:14px}
+.card h3{margin-bottom:10px}.card p{color:#91a5bc;line-height:1.5}
+footer{border-top:1px solid rgba(0,153,255,.2);padding:25px;text-align:center;color:#8298b0}
+@media(max-width:800px){
+  nav{display:none}.badge{font-size:13px;padding:8px 12px}
+  h1{font-size:48px}.tag{font-size:20px}
+  .features{grid-template-columns:1fr 1fr}
+}
+@media(max-width:500px){.features{grid-template-columns:1fr}.z{font-size:80px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><span>Z</span>YNOVA</div>
+  <nav>
+    <a href="#home">Trang chủ</a>
+    <a href="#download">Tải script</a>
+    <a href="#guide">Hướng dẫn</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+  <div class="badge">🛡 An toàn · Miễn phí</div>
+</header>
+
+<section class="hero" id="home">
+  <div class="z">Z</div>
+  <h1>ZYNOVA</h1>
+  <div class="tag">Script mạnh mẽ – Trải nghiệm mượt mà</div>
+  <p class="desc">
+    Zynova mang đến cho bạn những công cụ hỗ trợ tốt, giao diện đơn giản
+    và trải nghiệm nhanh chóng.
+  </p>
+
+  <!-- THAY LINK GOOGLE DRIVE CỦA BẠN VÀO href BÊN DƯỚI -->
+  <a class="download" id="download" href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" rel="noopener">
+    ⬇ TẢI SCRIPT
+  </a>
+  <div class="note">🛡 Hoàn toàn miễn phí · Hãy chỉ tải file từ nguồn bạn tin cậy</div>
+</section>
+
+<section class="features">
+  <div class="card"><div class="icon">⚡</div><h3>Hiệu suất cao</h3><p>Tối ưu để sử dụng mượt và ổn định.</p></div>
+  <div class="card"><div class="icon">🛡</div><h3>An toàn</h3><p>Luôn kiểm tra file trước khi sử dụng.</p></div>
+  <div class="card"><div class="icon">⚙</div><h3>Dễ sử dụng</h3><p>Giao diện đơn giản, dễ thao tác.</p></div>
+  <div class="card"><div class="icon">↻</div><h3>Cập nhật</h3><p>Có thể thay đổi link tải khi có phiên bản mới.</p></div>
+</section>
+
+<section id="guide" style="text-align:center;padding:20px 20px 70px">
+  <h2>Hướng dẫn</h2>
+  <p style="color:#91a5bc;margin-top:12px">Bấm “TẢI SCRIPT” để mở file tải xuống.</p>
+</section>
+
+<footer id="contact">© 2026 Zynova · Trang cá nhân</footer>
+</body>
+</html>
