@@ -1,63 +1,227 @@
-<!DOCTYPE html>
 
-<html lang="en">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zynova Download</title>
+<title>ZYNOVA - Official Website</title>
+
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: repeating-linear-gradient(
+        135deg,
+        #080808 0px,
+        #080808 65px,
+        #252525 66px,
+        #252525 69px
+    );
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #080808;
+    border-bottom: 1px solid #555;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px 80px;
+}
+
+.tag {
+    font-size: 13px;
+    letter-spacing: 6px;
+    color: #ccc;
+}
+
+h1 {
+    font-size: clamp(55px, 12vw, 105px);
+    font-weight: 1000;
+    font-style: italic;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    text-shadow: 4px 4px 0 #444, 0 0 25px #aaa;
+}
+
+.description {
+    color: #ccc;
+    line-height: 1.8;
+    margin: 25px auto 35px;
+}
+
+.buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background: #0b0b12;
-    color: white;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.card {
-    width: 380px;
-    padding: 35px;
-    text-align: center;
-    background: #171722;
-    border-radius: 20px;
-    box-shadow: 0 0 35px rgba(0,0,0,0.6);
-}
-h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
-}
-p {
-    color: #aaa;
-    margin-bottom: 25px;
-}
-.download {
+
+.btn {
     display: inline-block;
-    padding: 14px 30px;
-    border-radius: 10px;
-    background: white;
-    color: #111;
+    min-width: 230px;
+    padding: 18px 24px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: white;
+    background: #080808;
     text-decoration: none;
     font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.25s;
 }
-.download:hover {
-    background: #ddd;
+
+.btn:hover {
+    color: black;
+    background: white;
+    box-shadow: 0 0 25px white;
+    transform: translateY(-4px);
+}
+
+.section {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px 70px;
+    text-align: center;
+}
+
+.section h2 {
+    letter-spacing: 3px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.card {
+    flex: 1;
+    min-width: 180px;
+    padding: 25px 15px;
+    background: rgba(0,0,0,.85);
+    border: 1px solid #555;
+    border-radius: 12px;
+}
+
+.card p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #080808;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px;
+    }
+
+    .hero {
+        padding-top: 65px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 320px;
+    }
 }
 </style>
 </head>
 
 <body>
-<div class="card">
-    <h1>ZYNOVA</h1>
-   <p>Download Center</p>
 
-<a class="download" href="https://drive.google.com/file/d/14iMtiwOVktjU_fvvt9n6sZoynBZmvned/view?usp=sharing" target="_blank">
-    DOWNLOAD
-</a>   
-<a class="download" href="https://docs.google.com/document/d/13Dp4js0Ex7gd56X2Q84xs4wtY4HHVP1k4JU7j5caBsY/edit?usp=sharing"target="_blank">
-TẢI SCRIPT
+<header>
+    <a class="logo" href="index.html">ZYNOVA</a>
+    <a href="script.html">SCRIPT ↗</a>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="tag">WELCOME TO</div>
+
+        <h1>ZYNOVA</h1>
+
+        <div class="tag">PLAY · EXPLORE · ENJOY</div>
+
+        <p class="description">
+            Chào mừng đến với ZYNOVA.<br>
+            Khám phá nội dung Roblox trong phong cách đen trắng.
+        </p>
+
+        <div class="buttons">
+            <a class="btn"
+               href="https://drive.google.com/file/d/14iMtiwOVktjU_fvvt9n6sZoynBZmvned/view?usp=sharing"
+               target="_blank" rel="noopener noreferrer">
+                ↓ DOWNLOAD ZYNOVA
+            </a>
+<a class="btn"
+   href="https://docs.google.com/document/d/13Dp4js0Ex7gd56X2Q84xs4wtY4HHVP1k4JU7j5caBsY/edit?usp=sharing"
+   target="_blank" rel="noopener noreferrer">
+    ↓ DOWNLOAD SCRIPT
 </a>
-</div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>WHY ZYNOVA?</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>⚡ SIMPLE</h3>
+                <p>Giao diện đơn giản, dễ sử dụng.</p>
+            </div>
+
+            <div class="card">
+                <h3>◈ BLACK & WHITE</h3>
+                <p>Phong cách đen sọc trắng cá tính.</p>
+            </div>
+
+            <div class="card">
+                <h3>☆ QUICK ACCESS</h3>
+                <p>Truy cập nhanh đến các liên kết.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <strong>ZYNOVA</strong>
+    <p>Thank you for visiting!</p>
+</footer>
+
 </body>
 </html>
